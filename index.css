@@ -20,13 +20,39 @@
 }
 
 body {
-  background-color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  background-color: hsl(60deg 7% 87%);
+  font-family: Calisto MT, Garamond, Cambria;
+  color: black;
 }
 
 .page-container {
-  width: 80%;
+  width: 92%;
   margin-top: 5rem;
   margin: auto;
+  padding-bottom: 30px;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.clear{
+  clear:both;
+}
+
+.image {
+  width: 600px;
+  float: right;
+  margin-left: 10px;
+  border: 2px solid hsl(60deg 7% 87%);
+  border-radius: 10px;
+}
+
+.textleft {
+  float: left;
+  width: calc(92% - 600px - 10px);
 }
