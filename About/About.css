@@ -1,0 +1,29 @@
+.picture {
+  width: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+  aspect-ratio: 1;
+  margin-left: 5%;
+}
+
+.bio-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 5rem;
+  gap: 12px;
+}
+
+body {
+  background-color: hsl(60deg 7% 87%);
+  font-family: Calisto MT, Garamond, Cambria;
+  color: black;
+}
+
+.alignright {
+	float: right;
+}
+
+h3 {
+  font-weight: normal;
+}
