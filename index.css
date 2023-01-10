@@ -8,7 +8,6 @@
 }
 
 .picture-container {
-
   position: relative;
 }
 
@@ -30,21 +29,6 @@
   opacity: 1;
 }
 
-/* .picture:hover {
-  opacity:0;
-}
-
-.title:hover {
-  opacity: 1;
-}
-
-.title:hover + .picture {
-  opacity: 0;
-}
-
-.picture:hover ~ .title {
-  opacity: 1;
-} */
 
 .picture, .title {
   transition: opacity 0.2s ease-in-out;
@@ -65,7 +49,7 @@ body {
 }
 
 .page-container {
-  width: 92%;
+  width: 90%;
   margin-top: 5rem;
   margin: auto;
   padding-bottom: 40px;
@@ -94,21 +78,25 @@ body {
   margin-left: 10px;
   border: 2px solid hsl(60deg 7% 87%);
   border-radius: 10px;
-  padding-bottom: 40px;
 }
 
 .textleft {
   float: left;
-  width: calc(92% - 600px - 10px);
+  width: calc(90% - 600px - 10px);
   margin-bottom: 60px;
 }
 
 .buttonleft {
   float: left;
   position: absolute;
-  left: calc(0.4 * calc(92% - 600px - 10px));
+  left: calc(0.4 * calc(90% - 600px - 10px));
 }
 
+a:link { 
+  text-decoration: none;
+}
+
+/* https://getcssscan.com/css-buttons-examples */
 .button-6 {
   align-items: center;
   background-color: #ffffff94;
@@ -154,8 +142,4 @@ body {
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   color: rgb(0, 0, 0);
   transform: translateY(0);
-}
-
-a:link { 
-  text-decoration: none;
 }

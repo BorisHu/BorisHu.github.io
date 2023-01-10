@@ -3,50 +3,100 @@
     <link rel="stylesheet" href="./MP0.css" />
   </head>
   <body>
-    <div class="recipe-container">
-      <h1>Blueberry Oatmeal Cookies</h1>
-      <h2>Ingredients</h2>
-      <ul class="ingredient-list">
-        <li>2 sticks softened butter</li>
-        <li>3/4 cup granulated sugar</li>
-        <li>1 cup brown sugar (packed)</li>
-        <li>2 eggs</li>
-        <li>1 1/2 Tbsp. pure vanilla</li>
-        <li>2 1/2 cups all purpose flour</li>
-        <li>2 1/2 cups oatmeal (I used quick oats)</li>
-        <li>1 tsp. baking soda</li>
-        <li>1 tsp. kosher salt</li>
-        <li>2 cups caramel (Bits, by Kraft)</li>
-        <li>1 1/2 cups dried blueberries (found mine at Costco)</li>
-        <li>1 cup white chocolate chips (or chopped white chocolate)</li>
-      </ul>
-      <h2>Directions</h2>
-      <ol class="directions">
-        <li>Preheat oven to 350 degrees F.</li>
+    <h1 class="title">MP0 Portfolio WriteUp</h1>
+    <div class="page-container">
+      <h2>Overview</h2>
+      <div class="section-container">
+          
+          <ol>
+            <li>Add heading to the website with my name as the titl and "About" 
+              page a a button on the right side.
+            </li>
+            <li>
+              Write a short introduction as the first view of the portfolio website
+              Place a photo of me next to the short introduction
+            </li>
+            <li>
+              Build the "About" page with the discription about me and the goal I want
+              to accomplish. Also put another photo next to the discription.
+            </li>
+            <li>
+              Add the project sections for Web Technologies and Physical Prototyping on
+              the home page after the short introduction part.
+            </li>
+          </ol>
+        <img class="picture" src="Unfinished.png"/>
+      </div>
+      <h2>Issue</h2>
+      <div class="section-container">
+        <ul>
+          <li>
+            During making the header of the home page, I could not figure out how to put
+            the title and the button link to the about page at two sides of the header. After
+            reviewing the class slides and searching on google, I used float to accomplish
+            effect. However, other elements will overlap with the floating elements and 
+            mess up the arrangement of the page. I solved this problem by add a clear div
+            to remove the floating condition of the elements afterwards.
+          </li>
+          <li>
+            The way I would like to arrange my home page is to place my short intro and my
+            photo horizontally and put a button to download my resume at the botton of the
+            intro. I solve it also by searching on the internet and using the absolute
+            position and changed the left margin to make it resposive to the size change of
+            the browser.
+          </li>
+          <li>
+            I would like to add a hover effect to the projects on the home page that shows
+            the title of the projects when mouse hovering. To accomplish this effect, I 
+            also used to absolute postion to make the project title overlap with the project
+            picture. The problem of this hovering effect is to make the two elements both
+            change opacity when the mouse hovering. I searched on the internet and found
+            out that when the relationship of the elements are different, the sybol used to
+            connect them are also different. When one of the elements is after the other, we
+            need to use "+", when there are other elements between them, we should use "~",
+            and when one element is a descendant of the other, we can just use a space.
+          </li>
+        </ul>
+      </div>
+      <h2>CSS Transition</h2>
+      <div class="section-container">
+      <ol>
         <li>
-          In a stand mixer, beat the butter and sugars until light and fluffy.
+          The hovering state of the projects. The picture of the project will disapper and
+          the title of the proeject will show up when mouse hovering. I choose to use it is
+          because I want to show the title of each projects directly on the home page to make
+          it clear to the users. I use hover state in the CSS file to make it work.
         </li>
-        <li>Beat in eggs and vanilla until well combined.</li>
+        <img class="gif" src="MP0 CSS Transition.gif"/>
         <li>
-          Place flour, oatmeal, baking soda and salt into a large bowl; mix to
-          combine.
+          The button transition comes from the Internet https://getcssscan.com/css-buttons-examples
+          It will add drop shadow when hovering. I choose it in order to make the users know this
+          button can click.
         </li>
-        <li>
-          Add dry ingredients to wet ingredients along with the caramel bits,
-          blueberries and white chocolate. Mix until just combined.
-        </li>
-        <li>
-          If using a muffin top pan, spray with cooking spray, scoop about 1/4
-          Cup dough into each muffin top pan cup, then press to about 1/2 inch
-          thick. Bake for 11-14 minutes or until edges are just golden brown.
-        </li>
-        <li>
-          If using a normal baking sheet. Use a medium cookie scoop and scoop
-          dough onto a silpat or parchment lined baking sheet. Bake for 9-11
-          minutes or until edges are just turning golden brown.
-        </li>
-        <li>Remove and let cool for 5 minutes before removing from pan.</li>
+        <img class="gif" src="MP0 Button CSS Transition.gif"/>
       </ol>
+      </div>
+      <h2>Ideas and Future</h2>
+      <div class="section-container">
+        <ul>
+          <li>
+            Add more projects from my previous experience and create more project sections on my home 
+            page.
+          </li>
+          <li>
+            Make the header appear on all the pages and add a footer that also appears on all pages.
+            The header needs to be sticky which will always show on the top of the page. The footer
+            will show my contact information.
+          </li>
+          <li>
+            Add a back to home page button on every projects page. Maybe also another button directs
+            to the next projects.
+          </li>
+          <li>
+            Add some animation to the web pages by using Javascript.
+          </li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>
