@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./blink.css" />
+  </head>
+  <body>
+    <h1 class="title">Blink!</h1>
+    <div class="page-container">
+      <h2>Overview</h2>
+      <div class="section-container">
+          <p>I have created a schematic for 3 LEDs connected to my Arduino, and I also 
+            implemented it as a circuit on my breadboard. I have also write firmware for 
+            the circuit that makes the LEDs blink in a pattern.</p>
+        <img class="gif" src="./Blink.jpeg"/>
+      </div>
+      <h2>Schematic</h2>
+      <div class="section-container">
+        <ol>
+          <li>
+            I have first calculated the appropriate resistance for each LEDs. The blue LED
+            has a different voltage drop with the red and yellow LEDs. I calculated them 
+            separately.
+          </li>
+          <img class="picture" src="./schematic calculation.png"/>
+          <li>
+            Then with the value of resistor, I have drew the schematic for the circuit.
+          </li>
+          <img class="picture" src="./schematic.png"/>
+        </ol>
+      </div>
+      <!-- <h2>CSS Transition</h2>
+      <div class="section-container">
+      <ol>
+        <li>
+          The hovering state of the projects. The picture of the project will disapper and
+          the title of the proeject will show up when mouse hovering. I choose to use it is
+          because I want to show the title of each projects directly on the home page to make
+          it clear to the users. I use hover state in the CSS file to make it work.
+        </li>
+        <img class="gif" src="MP0 CSS Transition.gif"/>
+        <li>
+          The button transition comes from the Internet https://getcssscan.com/css-buttons-examples
+          It will add drop shadow when hovering. I choose it in order to make the users know this
+          button can click.
+        </li>
+        <img class="gif" src="MP0 Button CSS Transition.gif"/>
+      </ol>
+      </div> -->
+      <h2>Circuit</h2>
+      <div class="section-container">
+        <p>
+          According to the schematic, I have built the circuit with Arduino on the breadboard.
+        </p>
+        <img class="gif" src="./Blink.gif"/>
+      </div>
+      <h2>Firmware</h2>
+      <div class="section-container">
+        <pre>
+          <code>
+            int i = 0;
+          </code>
+        </pre>
+      </div>
+    </div>
+  </body>
+</html>
