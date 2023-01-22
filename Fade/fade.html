@@ -1,0 +1,89 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./fade.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="../index.html">Boris Hu</a>  
+      <h1>
+      <h2 class="about">
+        <a href="../About/About.html">About</a>
+      </h2>
+    </header>
+
+    <h1 class="title">Fade!</h1>
+    <div class="page-container">
+      <h2>Overview</h2>
+      <div class="section-container">
+          <p>I have created a device to fade LED in a sequence with schematic, circuit, codes, 
+            a button, for loops, digitalWrite(), digitalRead(), and analogWrite(). I built it
+            with Arduino and implemented it on a breadboard.
+          </p>
+        <img class="gif" src="./fade.gif">
+      </div>
+      <h2>Schematic</h2>
+      <div class="section-container">
+        <ol>
+          <li>
+            I have first calculated the appropriate resistance for each LEDs. The red, yellow,
+            and green have a same voltage drop. I calculated them at the same time.
+          </li>
+          <img class="picture" src="./fade sche calc.png"/>
+          <li>
+            Then with the value of resistor, I have drew the schematic for the circuit.
+          </li>
+          <img class="picture" src="./fade schematic.png"/>
+        </ol>
+      </div>
+      <h2>Circuit</h2>
+      <div class="section-container">
+        <p>
+          According to the schematic, I have built the circuit with Arduino on the breadboard.
+        </p>
+        <img class="gif" src="./fade.jpeg"/>
+      </div>
+      <h2>Firmware</h2>
+      <div class="section-container">
+        <pre>
+          <code>
+            // create an integer for delay time
+            int thisTime = 1000;
+            /* create an array for the pin that will be set as high voltage in a
+            sequence, one pin appears twice to create the returning blinking effect */
+            int highPins[] = {13, 12, 11, 12};
+            /* create an array for the two pins at the low voltage corresponds to the 
+            pin in the high voltage at the time */
+            int lowPins[] = {11, 12, 11, 13, 12, 13, 11, 13};
+            // the setup function runs once when you press reset or power the board
+            void setup() {
+              /* create a for loop in a length of 3 that could ignore the repetition
+              in the highPins array*/
+              for (int i = 0; i < 3; i++) {
+                //initialize digital pins in the highPins array as an output
+                pinMode(highPins[i], OUTPUT);
+              }
+            }
+            // the loop function runs over and over again forever
+            void loop() {
+              /* create a for loop to go through the highPins array with repetition */
+              for (int i = 0; i < 4; i++){
+                // set the i th element in the highPins array as high voltage, turn LED on
+                digitalWrite(highPins[i], HIGH);
+                /* set the i*2 th element in the lowPins array as low voltage since every
+                two elements in the lowPins array corrensponds to one element in highPins
+                array */
+                digitalWrite(lowPins[i*2], LOW);
+                /* set the i*2+1 th element in the lowPins array as low voltge since every
+                two pins need to be set as low voltage for one pin in high voltage */
+                digitalWrite(lowPins[i*2+1], LOW);
+                // delay the current situation for the time created previously (1 second)
+                delay(thisTime);
+              }
+            }
+          </code>
+        </pre>
+      </div>
+    </div>
+  </body>
+</html>
