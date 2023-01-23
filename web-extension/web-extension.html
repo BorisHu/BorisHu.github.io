@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./web-extension.css" />
+    <title>MP1</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="../index.html">Boris Hu</a>  
+      <h1>
+      <h2 class="about">
+        <a href="../About/About.html">About</a>
+      </h2>
+    </header>
+
+    <h1 class="title">MP1 Web Extension WriteUp</h1>
+    <div class="page-container">
+      <h2>Overview and Usage</h2>
+      <div class="section-container">
+          <p>
+            In this project, I made a chrome web extension that could change the current tab 
+            to incognito mode, also it will delete the browser history of this tab.
+            To use this web extension, load unpacked web extension in the chrome extensions 
+            page. Then, on the tab you want to change to incognito, click the button in the 
+            extension section on the top right corner of the brower.
+          </p>
+      </div>
+      <img class="picture-big" src="./web-extension.gif"/>
+
+      <h2>Development Process</h2>
+      <div class="section-container">
+        <ol>
+          <li>
+            I have first look through the chrome developer page of creating new windows and 
+            clearing brower history. Watched some youtube tuturial videos to about creating 
+            web extensions.
+          </li>
+          <li>
+            Then I have looked up for example project on github to see if there is similar 
+            ones that could inspire my thought.
+          </li>
+          <li>
+            Finally, I modified the code to accomplish my goal that switch current tab to 
+            incognito and delete history.
+          </li>
+        </ol>
+        <img class="picture" src=""/>
+      </div>
+
+      <h2>Issue Deep-Dive</h2>
+      <div class="section-container">
+        <ul>
+          <li>
+            The biggest problem I have encountered is when opening a new incognito window, chrome will 
+            open a blank page with error message that I don't have the permission. This is probally a 
+            logic error since the syntax is correct according to VS code.
+          </li>
+          <li>
+            In order to solve this issue, I choose to go through the tuturials on chrome developers page, 
+            MDN web docs, and video tuturial on youtube to better understand the logic of the kind of web 
+            extension I am trying to make. Also, the most helpful method is to learn from the existing 
+            projects on github with similar features.
+          </li>
+        </ul>
+      </div>
+      
+      <h2>Ideas and Future</h2>
+      <div class="section-container">
+        <ul>
+          <li>
+            Add a new feature that could close the current tab so the users don't need to switch to normal 
+            mode and close it by themselves. This requires get current tab method and remove method.
+          </li>
+          <li>
+            Add a new option to execute the extension when right click on current tab. This requires to use 
+            contextMenus method and needs more permission.
+          </li>
+        </ul>
+      </div>
+
+      <h2>Kudos</h2>
+      <div class="section-container">
+        <ul>
+          <li>
+            <a herf="https://github.com/sanjay-venkatesh/Incognito-chrome">
+              https://github.com/sanjay-venkatesh/Incognito-chrome
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
