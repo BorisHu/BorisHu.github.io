@@ -49,7 +49,63 @@
       <div class="section-container">
         <pre>
           <code>
-            
+            const int analogInPin = A0;  // Analog input pin that the potentiometer is attached to
+            const int analogOutPinGre = 9;  // Analog output pin that the LED is attached to
+            const int analogOutPinRed = 10;  // Analog output pin that the LED is attached to
+
+            int sensorValue = 0;  // value read from the sensor
+            int highSensorValue = 0;  // value will be the highest value from sensor
+            int lowSensorValue = 1023;  // value will be the lowest value from sensor
+            int outputValue = 0;  // value output to the LED (analog out)
+
+            void setup() {
+              // initialize serial communications at 9600 bps:
+              Serial.begin(9600);
+            }
+
+            void loop() {
+              // read the analog in value:
+              sensorValue = analogRead(analogInPin);
+              /* check if the current sensor value is higher than 
+                previous created highSensorValue */
+              if (sensorValue >= highSensorValue) {
+                // if yes, replace the highSensorValue with current sensorValue
+                highSensorValue = sensorValue;
+              /* check if the current sensor value is lower than 
+                previous created lowSensorValue */
+              } else if (sensorValue < lowSensorValue) {
+                // if yes, replace the lowSensorValue with current sensorValue
+                lowSensorValue = sensorValue;
+              }
+              // map it to the range of the analog out:
+              outputValue = map(sensorValue, lowSensorValue, highSensorValue, 0, 255);
+
+              // print the name of output to the Serial Monitor:
+              Serial.print("sensor = ");
+              // print the current sensor value to the Serial Monitor:
+              Serial.print(sensorValue);
+              // print the name of output to the Serial Monitor:
+              Serial.print("lowsensor = ");
+              // print the lowest sensor value to the Serial Monitor:
+              Serial.print(lowSensorValue);
+              // print the name of output to the Serial Monitor:
+              Serial.print("hisensor = ");
+              // print the highest sensor value to the Serial Monitor:
+              Serial.print(highSensorValue);
+              // print the name of output to the Serial Monitor:
+              Serial.print("sensor = ");
+              // print the mapped output value to the Serial Monitor:
+              Serial.println(outputValue);
+
+              // change the analog out value of the green LED:
+              analogWrite(analogOutPinGre, outputValue);
+              // change the analog out value of the red LED:
+              analogWrite(analogOutPinRed, (255-outputValue));
+
+              // wait 2 milliseconds before the next loop for the analog-to-digital
+              // converter to settle after the last reading:
+              delay(50);
+            }
           </code>
         </pre>
       </div>
