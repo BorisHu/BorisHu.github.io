@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./Transistors.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="../index.html">Boris Hu</a>  
+      <h1>
+      <h2 class="about">
+        <a href="../About/About.html">About</a>
+      </h2>
+    </header>
+
+    <h1 class="title">High(er) voltage and transistors!</h1>
+    <div class="page-container">
+      <h2>Overview</h2>
+      <div class="section-container">
+          <p>I have created a device that could detect the distance and adjust the brightness 
+            of the LED strip corresponds to the distance. When the distance is further, the LED 
+            strip will become brighter, when the distance is closer, the LED strip will become 
+            dimmer.
+          </p>
+        <img class="gif" src="./Transistors.gif">
+      </div>
+      <h2>Schematic</h2>
+      <div class="section-container">
+        <ol>
+          <li>
+            In order to light up the LED strip, I choose to use the N-MOSFET transistor 
+            and external power supply with 12V. For the input source, I choose to use 
+            the ultrasonic sensor.
+          </li>
+          <li>
+            On the box of the LED strip, I find the information of its current at 12V is 
+            1.5A which is samller than the max current of the transistor: 32A.
+          </li>
+          <img class="picture" src="./Schematic.png"/>
+        </ol>
+      </div>
+      <h2>Circuit</h2>
+      <div class="section-container">
+        <p>
+          According to the schematic, I have built the circuit with Arduino on the breadboard.
+        </p>
+        <img class="gif" src="./Transistors.jpeg"/>
+      </div>
+      <h2>Firmware</h2>
+      <div class="section-container">
+        <pre>
+          <code>
+          </code>
+        </pre>
+      </div>
+    </div>
+  </body>
+</html>
