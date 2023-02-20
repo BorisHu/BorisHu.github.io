@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./web-game.css" />
+    <title>MP3</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="../index.html">Boris Hu</a>  
+      <h1>
+      <h2 class="about">
+        <a href="../About/About.html">About</a>
+      </h2>
+    </header>
+
+    <h1 class="title">MP3 Dev Toolchain</h1>
+    <div class="page-container">
+      <h2>Overview and Usage</h2>
+      <div class="section-container">
+          <p>
+            In this project, I made a simple bullet hell game that could run on an website. I have 
+            practiced to use the modern web development toolchain to structure and deploy an 
+            app which includes external dependencies. I have mainly use the p5 and p5.play libraries 
+            to make the game.
+          </p>
+      </div>
+      <a href="https://borishu.github.io/web-games/">
+        <img class="picture-big" src="./bullethell.png"/>
+      </a>
+      
+
+      <h2>Development Process</h2>
+      <div class="section-container">
+        <ol>
+          <li>
+            First, I followed the class activity to initialize the develop toolchain to build the 
+            environment for me the make the game.
+          </li>
+          <li>
+            Next, I have gone through the p5.play tuturial website and watched several videos on youtube 
+            to have an basic undersanting of p5.play.
+          </li>
+          <li>
+            Then I have tried all the different functions on p5 editor and use them to first build 
+            the structure of he game.
+          </li>
+          <li>
+            Finally, I solved the problems I encountered and created my own simple game.
+          </li>
+        </ol>
+        <img class="picture" src="./Empty Chunk.png"/>
+      </div>
+
+      <h2>Issue Deep-Dive</h2>
+      <div class="section-container">
+        <ol>
+          <li>
+            The first problem I have encountered is the rollup plugin I used to bundle the code is creating 
+            an empty JavaScript file in the dist folder which will cause the page deployed show nothing.
+            <ul>
+              <li>
+                By following Hannah's instruction in the discord server, I have changed to not use the node 
+                resolve plugin and use the direct import in the HTML files.
+              </li>
+            </ul>
+          </li>
+          <li>
+            The second problem I encountered is the sprites I have created in the "draw" function could not 
+            interact with other sprites. After debugging, I found out that the sprites and groups need 
+            to be created in the "setup" function to enable it to interact with other elements.
+            <ul>
+              <li>
+                After detected the problem, I changed the structure of my code and created all the sprites 
+                and groups in the "setup" funtion.
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+      
+      <h2>Ideas and Future</h2>
+      <div class="section-container">
+        <ul>
+          <li>
+            Make it looks better by changing the appearance of the player and the enemies. Fix the enemies 
+            could only show one bullet problem.
+          </li>
+          <li>
+            Add a score count and make the health of the player become a health bar. Add more enemy bullets 
+            type and movements.
+          </li>
+        </ul>
+      </div>
+
+      <h2>Kudos</h2>
+      <div class="section-container">
+        <ul>
+          <li>
+            <a href="https://creative-coding.decontextualize.com/making-games-with-p5-play/">
+              Making Games with p5.play: https://creative-coding.decontextualize.com/making-games-with-p5-play/
+            </a>
+          </li>
+          <li>
+            <a href="https://p5play.org/index.html">
+              p5play: https://p5play.org/index.html
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
