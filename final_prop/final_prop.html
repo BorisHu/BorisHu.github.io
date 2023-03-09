@@ -19,13 +19,22 @@
       <h2>Project Concept:</h2>
       <div class="section-container">
           <p>
-            I would like to combine this project with the HCDE 438 project 
+            I would like to combine the final projects of HCDE 438 and HCDE 439
             to make a bullet hell web-game that the character could be controlled 
             by the joystick and buttons. The HP of the character will be displayed 
             on the seven segment display, the score of the player will be showed 
-            on the 4 digit seven-segment display.
+            on the 4 digit seven-segment display. I will use P5.js to make a bullet 
+            hell game and use Firebase to store the player's score of each game.
           </p>
+<<<<<<< HEAD:final_prop/final_prop.html
         <img class="gif" src="./final_prop.gif">
+=======
+      </div>
+      <div class="section-container">
+        <img class="gif" src="./final.gif">
+        <img src="./Login.png" alt="login" class="gif">
+        <img src="./Ranking.png" alt="ranking" class="gif">
+>>>>>>> 2fac3fcb90a67ade19eabf783666563e3921e129:final/final.html
       </div>
       <h2>Anticipated Bill of Materials:</h2>
       <div class="section-container">
@@ -56,15 +65,32 @@
           </li>
         </ul>
       </div>
-      <h2>Timeline and contingency plans:</h2>
+      <h2>Version Description</h2>
+      <div style="margin-bottom: 5%;">
+        <h3>Prototype Version</h3>
+        <p>
+          Limited game features with basic firebase storing userdata such as userID 
+          and score. The game part and the firebase part maybe seperated. Game 
+          calculate score by it own. Input the score hardcoded to firebase. 
+          Style CSS may not included. Electronic parts work to input some values 
+          and return to arduino score value.
+        </p>
+        <h3>Final Version</h3>
+        <p>
+          Refined interface and appearance. The score of the game direct input to 
+          firebase. Arduino electronic parts able to control the character of the 
+          game.
+        </p>
+      </div>
+      <h2>Timeline and Plans:</h2>
       <div style="margin-bottom: 7%;">
-        <ul>
+        <ol>
           <li>
             By March 2nd: Try using each electronic parts for tasks to prepare for 
-            the project.
+            the project. Learn Firebase Libiary features.
           </li>
           <li>
-            By March 3rd: Finish coding part of the bullet hell game made by P5.js 
+            By March 5th: Finish coding part of the bullet hell game made by P5.js 
             and connect to arduino.
           </li>
           <li>
@@ -74,14 +100,31 @@
           <li>
             By March 9th: Final Presentation, webpage documentation.
           </li>
+        </ol>
+        <h3>Known unknowns</h3>
+        <ul>
+          <li>
+            Firebse Features
+          </li>
+          <li>
+            Joystick Control Movement
+          </li>
+          <li>
+            P5.js return value to Arduino
+          </li>
         </ul>
-        <h4>
+        <h3>
           Plan B:
-        </h4>
+        </h3>
         <p>
           If something goes wrong with using physical parts to control or display 
           information in the game, I will choose to use the computer keys or display.
         </p>
+      <h3>Stretch goals</h3>
+      <ul>
+        <li>Add more features to Game such as more enemies and Bosses</li>
+        <li>Replace Login page with login section on gaming page.</li>
+      </ul>
       </div>
     </div>
   </body>
