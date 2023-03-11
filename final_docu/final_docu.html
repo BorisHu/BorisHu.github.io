@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./final_docu.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="../index.html">Boris Hu</a>  
+      <h1>
+      <h2 class="about">
+        <a href="../About/About.html">About</a>
+      </h2>
+    </header>
+
+    <h1 class="title">Final Project Documentation</h1>
+    <div class="page-container">
+      <h2>Overview</h2>
+      <div class="section-container">
+          <p>
+            I made a bullet hell web-game that the character could be controlled 
+            by the joystick and buttons. The HP of the character will be displayed 
+            on the seven segment display, the score of the player will be showed 
+            on the 4 digit seven-segment display. I will use P5.js to make a bullet 
+            hell game and use Firebase to store the player's score of each game.
+          </p>
+      </div>
+    <video controls width="250">
+      <source src="./Final Docu.m4v" type="video/mp4">
+    </video>
+    
+      <h2>Schematic</h2>
+      <div class="section-container">
+        <ol>
+          <li>
+            I have first calculated the appropriate resistance for the seven segment display. 
+            According to the datasheet, the DC forward current for red LED is 15mA, the voltage 
+            drop is 3.0V. With these data, I have calculated the resistance value.
+          </li>
+          <img class="picture" src="./Datasheet.png"/>
+          <img class="picture" src="./calculation.png"/>
+          <li>
+            Then with the value of resistor, I have drew the schematic for the circuit.
+          </li>
+          <img class="picture" src="./final_docu_sche.png"/>
+        </ol>
+      </div>
+      <h2>Circuit</h2>
+      <div class="section-container">
+        <p>
+          According to the schematic, I have built the circuit with Arduino on the breadboard.
+        </p>
+        
+      </div>
+      <div class="section-container">
+        <img class="picture" src="./final_docu_1.jpeg"/>
+        <img class="picture" src="./final_docu_2.jpeg"/>
+      </div>
+      
+      <h2>Firmware</h2>
+      
+      <p>Due to the reason that the link is too long to be put in the Documentation page, I included 
+        the github repository. The arduino code is in the "final" folder.
+      </p>
+      <a style="padding-bottom: 5%;" href="https://github.com/BorisHu/4389Final">Link to Github Repository: https://github.com/BorisHu/4389Final</a>
+  </body>
+</html>
