@@ -1,26 +1,28 @@
 body {
-    background-color: hsl(60deg 7% 87%);
-    font-family: Calisto MT, Garamond, Cambria;
-    color: black;
+  width: 90%;
+  margin: auto;
+  background-color: hsl(60deg 7% 87%);
+  font-family: Calisto MT, Garamond, Cambria;
+  color: black;
+  margin-bottom: 5%;
 }
 
 .cheat-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: auto;
-    gap: 20px;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 20px;
+  align-items: center;
 }
 
-a:link, a:visited { 
+a:link,
+a:visited {
   text-decoration: none;
   color: #000;
 }
 
 header {
   display: flex;
-  width: 90%;
   margin: auto;
   margin-bottom: 3%;
 }
@@ -32,86 +34,109 @@ header {
 
 /* https://getcssscan.com/css-buttons-examples */
 .button-6 {
-    align-items: center;
-    background-color: #ffffff94;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: .25rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-    box-sizing: border-box;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    display: inline-flex;
-    font-family: Calisto MT, Garamond, Cambria;
-    font-size: 16px;
-    font-weight: 600;
-    justify-content: center;
-    line-height: 1.25;
-    margin: 0;
-    min-height: 3rem;
-    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-    position: relative;
-    text-decoration: none;
-    transition: all 250ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: baseline;
-    width: auto;
+  align-items: center;
+  background-color: #ffffff94;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Calisto MT, Garamond, Cambria;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
 }
-  
+
 .button-6:hover,
 .button-6:focus {
-    border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-    color: rgb(0, 0, 0);
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgb(0, 0, 0);
 }
-  
+
 .button-6:hover {
-    transform: translateY(-1px);
+  transform: translateY(-1px);
 }
-  
+
 .button-6:active {
-    background-color: #F0F0F1;
-    border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-    color: rgb(0, 0, 0);
-    transform: translateY(0);
+  background-color: #f0f0f1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgb(0, 0, 0);
+  transform: translateY(0);
 }
 
 /* picture title transition */
 .picture {
-    width: 300px;
-    border: 1px solid black;
-    border-radius: 10px;
-    cursor: pointer;
-    object-fit: cover;
-    aspect-ratio: 1;
-  }
-  
-  .picture-container {
-    position: relative;
-    width: 300px;
-  }
-  
-  .title {
-    position: absolute;
-    top: 120px;
-    left: 0px;
-    text-align: center;
-    width: 300px;
-    color: black;
-    opacity: 0;
-  }
-  
-  .picture-container:hover .picture {
-    opacity: 0;
-  }
-  
-  .picture-container:hover .title {
-    opacity: 1;
-  }
-  
-  
-  .picture, .title {
-    transition: opacity 0.2s ease-in-out;
-  }
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.picture-container {
+  position: relative;
+  width: 300px;
+}
+
+.title {
+  position: absolute;
+  top: 120px;
+  left: 0px;
+  text-align: center;
+  width: 300px;
+  color: black;
+  opacity: 0;
+}
+
+.picture-container:hover .picture {
+  opacity: 0;
+}
+
+.picture-container:hover .title {
+  opacity: 1;
+}
+
+.picture,
+.title {
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Game Button */
+.button-game {
+  text-align: center;
+  display: inline-block;
+  margin: 2%;
+  font-weight: bold;
+  padding: 10px 10px 10px 10px;
+  background-color: lightgray;
+  text-shadow: -1px -1px black, 1px 1px white;
+  color: gray;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  box-shadow: 0 0.2em gray;
+  cursor: pointer;
+}
+.button-game:active {
+  box-shadow: none;
+  position: relative;
+  top: 0.2em;
+}

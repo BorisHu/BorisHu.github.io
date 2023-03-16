@@ -41,6 +41,7 @@
   width: 90%;
   margin: auto;
   gap: 12px;
+  padding-bottom: 1%;
 }
 
 body {
@@ -61,14 +62,6 @@ body {
   
 }
 
-.alignleft {
-	float: left;
-}
-
-.alignright {
-	float: right;
-}
-
 .clear{
   clear:both;
 }
@@ -87,12 +80,6 @@ body {
   margin-bottom: 60px;
 }
 
-.buttonleft {
-  float: left;
-  position: absolute;
-  left: calc(0.4 * calc(90% - 600px - 10px));
-}
-
 a:link, a:visited { 
   text-decoration: none;
   color: #000;
@@ -100,14 +87,16 @@ a:link, a:visited {
 
 header {
   display: flex;
-  /* width: 90%; */
   margin: auto;
   margin-bottom: 3%;
+  justify-content: flex-end;
+  align-items: stretch;
 }
 
-.about {
+.left {
   margin-left: auto;
-  margin-right: 0;
+  margin-right: 18px;
+  margin-top: auto;
 }
 
 /* https://getcssscan.com/css-buttons-examples */

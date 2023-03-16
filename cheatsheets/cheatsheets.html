@@ -1,31 +1,93 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="./cheatsheets.css" />
+    <link alt="css" rel="stylesheet" href="./cheatsheets.css" />
     <title>Cheat Sheets</title>
+    <link
+      alt="icon"
+      rel="icon"
+      type="image/x-icon"
+      href="../favicon/favicon.ico"
+    />
   </head>
   <body>
     <header>
       <h1>
-        <a href="../index.html">Boris Hu</a>  
-      <h1>
+        <a alt="main-page" href="../index.html">Boris Hu</a>
+      </h1>
       <h2 class="about">
-        <a href="../About/About.html">About</a>
+        <a alt="about" href="./About.html">About</a>
       </h2>
     </header>
 
-    <h1 style="text-align: center;">Cheatsheets</h1>
+    <h1 style="text-align: center">Cheatsheets</h1>
+    <h2>CSS styles</h2>
     <div class="cheat-container">
-        <button class="button-6">Button</button>
-
-        <div class="picture-container">
-            <img
-                class="picture"
-                src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Goblin_illustration_from_19th_century.jpg"
-            />
-            <h2 class="title">Placeholder</h2>
-        </div>
+      <button class="button-6">Button</button>
+      <button class="button-game">Game Button</button>
+      <div class="picture-container">
+        <img
+          alt="Placeholder-pic"
+          class="picture"
+          src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Goblin_illustration_from_19th_century.jpg"
+        />
+        <h2 class="title">Placeholder</h2>
+      </div>
     </div>
+    <h2>Flexbox Align</h2>
+    <a
+      alt="flexbox link"
+      href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container"
+      >Link: MDN Web Docs</a
+    >
+    <ol>
+      <li>
+        Justify-content
+        <ul>
+          <li>justify-content: center; /* Pack items around the center */</li>
+          <li>justify-content: start; /* Pack items from the start */</li>
+          <li>
+            justify-content: space-between; /* Distribute items evenly The first
+            item is flush with the start, the last is flush with the end */
+          </li>
+          <li>
+            justify-content: space-around; /* Distribute items evenly Items have
+            a half-size space on either end */
+          </li>
+          <li>
+            justify-content: space-evenly; /* Distribute items evenly Items have
+            equal space around them */
+          </li>
+          <li>
+            justify-content: stretch; /* Distribute items evenly Stretch
+            'auto'-sized items to fit the container */
+          </li>
+        </ul>
+      </li>
+      <li>
+        Align-items
+        <ul>
+          <li>align-items: stretch;</li>
+          <li>align-items: center; /* Pack items around the center */</li>
+          <li>align-items: start; /* Pack items from the start */</li>
+          <li>align-items: end; /* Pack items from the end */</li>
+        </ul>
+      </li>
+      <li>
+        Align-content
+        <ul>
+          <li>align-content: center; /* Pack items around the center */</li>
+          <li>align-content: start; /* Pack items from the start */</li>
+          <li>
+            align-content: space-between; /* Distribute items evenly The first
+            item is flush with the start, the last is flush with the end */
+          </li>
+          <li>
+            align-content: space-around; /* Distribute items evenly Items have a
+            half-size space on either end */
+          </li>
+        </ul>
+      </li>
+    </ol>
   </body>
-
 </html>
