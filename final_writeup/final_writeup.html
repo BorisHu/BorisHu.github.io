@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./final_writeup.css" />
+    <title>Final Prototype</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="../index.html">Boris Hu</a>  
+      <h1>
+      <h2 class="about">
+        <a href="../About/About.html">About</a>
+      </h2>
+    </header>
+
+    <h1 class="title">Final Writeup</h1>
+    <div class="page-container">
+      <h2>Overview</h2>
+      <div>
+        <p>
+          This is the final version of the final project. From the prototype version, I have 
+          small bugs. Added the order to the leaderbaord, limit the displayed player on the 
+          leaderbaord to 10.
+          <h3>Links</h3>
+          <ul>
+            <li>Repository Link: 
+              <a href="https://github.com/BorisHu/4389Final">https://github.com/BorisHu/4389Final</a>
+            </li>
+            <li>
+              Game Link:
+              <a href="https://borishu.github.io/4389Final/">https://borishu.github.io/4389Final/</a>
+            </li>
+          </ul>
+        </p>
+      </div>
+      
+      <img class="gif" src="./final_gif.gif"/>
+      
+
+      <h2>Development Process</h2>
+      <div class="section-container">
+        <ol>
+          <li>
+            Found out the user name will be changed to "anon" but not "anonymous" after log out. 
+            Bug fixed after change the "anon" to "anonymous".
+          </li>
+          <li>
+            Created a list of numbers to indicate the order of the leaderbaord. Add this list next 
+            to the usernames and scores.
+          </li>
+          <li>
+            Finally, I deployed the website.
+          </li>
+        </ol>
+        <img class="picture" src="./final_leaderboard.png"/>
+      </div>
+
+      <h2>Issue Deep-Dive</h2>
+      <div class="section-container">
+        <ul>
+          <li>
+            To display the order beside the usernames and score, I tried to use ordered list in HTML, 
+            but it is too complicated to put every user and score in each list.
+          </li>
+          <li>
+            I use a tricky way to solve it which is to create a array with number 1 to 10 and put it 
+            beside the leaderbaord.
+          </li>
+        </ul>
+      </div>
+      
+      <h2>Ideas and Future</h2>
+      <div class="section-container">
+        <ul>
+          <li>
+            Add a large game over screen to show score of player after a game.
+          </li>
+          <li>
+            Add usernames could not be the same feature to make player unique
+          </li>
+          <li>
+            Add more features to the game to make it more interesting.
+          </li>
+        </ul>
+      </div>
+
+      <h2>Kudos</h2>
+      <div class="section-container">
+        <ul>
+          <li>
+            <a href="https://github.com/rsaihe/bullethell">
+              Original Bullet Hell Game: https://github.com/rsaihe/bullethell
+            </a>
+          </li>
+          <li>
+            <a href="https://codepen.io/DanielWeiner/pen/naybVd">
+              Button: https://codepen.io/DanielWeiner/pen/naybVd
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
